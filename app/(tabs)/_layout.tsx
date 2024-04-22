@@ -1,6 +1,8 @@
 import { colors, fontSize } from '@/constants/tokens'
 import { Tabs } from 'expo-router'
 import React from 'react'
+import { BlurView } from 'expo-blur'
+import { StyleSheet } from 'react-native'
 
 const TabsLayout = () => {
 	return (
@@ -11,7 +13,25 @@ const TabsLayout = () => {
 					fontSize: fontSize.xs,
 					fontWeight: '500'
 				},
-				headerShown: false
+				headerShown: false,
+				tabBarStyle: {
+					position: 'absolute',
+					borderTopLeftRadius: 20,
+					borderTopRightRadius: 20,
+					borderTopWidth: 0,
+					paddingTop: 8
+				},
+				tabBarBackground: () => (
+					<BlurView
+						intensity={90}
+						style={{
+							...StyleSheet.absoluteFillObject,
+							overflow: 'hidden',
+							borderTopLeftRadius: 20,
+							borderTopRightRadius: 20
+						}}
+					/>
+				)
 			}}
 		>
 			<Tabs.Screen name='favorites' options={{ title: 'Favorites' }} />
