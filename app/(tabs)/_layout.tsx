@@ -1,4 +1,10 @@
 import { colors, fontSize } from '@/constants/tokens'
+import {
+	FontAwesome,
+	FontAwesome6,
+	Ionicons,
+	MaterialCommunityIcons
+} from '@expo/vector-icons'
 import { BlurView } from 'expo-blur'
 import { Tabs } from 'expo-router'
 import React from 'react'
@@ -34,10 +40,54 @@ const TabsLayout = () => {
 				)
 			}}
 		>
-			<Tabs.Screen name='favorites' options={{ title: 'Favorites' }} />
-			<Tabs.Screen name='playlists' options={{ title: 'Playlists' }} />
-			<Tabs.Screen name='(songs)' options={{ title: 'Songs' }} />
-			<Tabs.Screen name='artists' options={{ title: 'Artists' }} />
+			<Tabs.Screen
+				name='favorites'
+				options={{
+					title: 'Favorites',
+					tabBarIcon: ({ color }) => (
+						<FontAwesome name='heart' size={20} color={color} />
+					)
+				}}
+			/>
+			<Tabs.Screen
+				name='playlists'
+				options={{
+					title: 'Playlists',
+					tabBarIcon: ({ color }) => (
+						<MaterialCommunityIcons
+							name='playlist-play'
+							size={20}
+							color={color}
+						/>
+					)
+				}}
+			/>
+			<Tabs.Screen
+				name='(songs)'
+				options={{
+					title: 'Songs',
+					tabBarIcon: ({ color }) => (
+						<Ionicons
+							name='musical-note-sharp'
+							size={20}
+							color={color}
+						/>
+					)
+				}}
+			/>
+			<Tabs.Screen
+				name='artists'
+				options={{
+					title: 'Artists',
+					tabBarIcon: ({ color }) => (
+						<FontAwesome6
+							name='users-line'
+							size={20}
+							color={color}
+						/>
+					)
+				}}
+			/>
 		</Tabs>
 	)
 }
