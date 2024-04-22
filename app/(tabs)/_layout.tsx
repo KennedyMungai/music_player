@@ -1,7 +1,7 @@
 import { colors, fontSize } from '@/constants/tokens'
+import { BlurView } from 'expo-blur'
 import { Tabs } from 'expo-router'
 import React from 'react'
-import { BlurView } from 'expo-blur'
 import { StyleSheet } from 'react-native'
 
 const TabsLayout = () => {
