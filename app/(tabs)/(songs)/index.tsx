@@ -11,7 +11,7 @@ const SongsPage = () => {
 				{ backgroundColor: '#000', paddingTop: 120 }
 			]}
 		>
-			<ScrollView>
+			<ScrollView showsVerticalScrollIndicator={false}>
 				<TrackList scrollEnabled={false} />
 			</ScrollView>
 		</View>
