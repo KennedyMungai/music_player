@@ -8,7 +8,7 @@ const SongsPage = () => {
 		<View
 			style={[
 				defaultStyles.container,
-				{ backgroundColor: '#000', marginTop: 120 }
+				{ backgroundColor: '#000', marginTop: 120, paddingTop: 20 }
 			]}
 		>
 			<ScrollView>
