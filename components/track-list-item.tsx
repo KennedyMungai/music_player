@@ -40,16 +40,16 @@ const TrackListItem = ({ track }: Props) => {
 						]}
 					>
 						{track.title}
-						{track.artist ? (
-							<Text style={styles.trackArtistText}>
-								{track.artist}
-							</Text>
-						) : (
-							<Text style={styles.trackArtistText}>
-								Unknown Artist
-							</Text>
-						)}
 					</Text>
+					{track.artist ? (
+						<Text style={styles.trackArtistText}>
+							{track.artist}
+						</Text>
+					) : (
+						<Text style={styles.trackArtistText}>
+							Unknown Artist
+						</Text>
+					)}
 				</View>
 			</View>
 		</TouchableHighlight>
@@ -78,6 +78,8 @@ const styles = StyleSheet.create({
 	},
 	trackInfoContainer: {
 		display: 'flex',
-		flexDirection: 'row'
+		flexDirection: 'row',
+		columnGap: 14,
+		paddingRight: 20
 	}
 })
