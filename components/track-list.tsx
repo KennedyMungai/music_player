@@ -19,6 +19,7 @@ const TrackList = ({ ...flatlistProps }: TracksListProps) => {
 	return (
 		<FlatList
 			data={data as ITrack[]}
+			ItemSeparatorComponent={() => <ItemDivider />}
 			renderItem={({ item: track }) => (
 				<TrackListItem track={track as ITrack} />
 			)}
