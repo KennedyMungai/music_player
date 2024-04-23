@@ -7,7 +7,7 @@ const ArtistsPage = () => {
 		<View
 			style={[
 				defaultStyles.container,
-				{ backgroundColor: '#000', marginTop: 120, paddingTop: 20 }
+				{ backgroundColor: '#000', paddingTop: 120 }
 			]}
 		>
 			<Text style={defaultStyles.text}>SongsPage</Text>
