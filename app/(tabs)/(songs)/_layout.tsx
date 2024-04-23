@@ -1,13 +1,13 @@
 import { Stack } from 'expo-router'
 import React from 'react'
-import { StackSCreenWithSearchBar } from '../../../constants/layout'
+import { StackScreenWithSearchBar } from '../../../constants/layout'
 
 const SongsScreenLayout = () => {
 	return (
 		<Stack>
 			<Stack.Screen
 				name='index'
-				options={{ headerTitle: 'Songs', ...StackSCreenWithSearchBar }}
+				options={{ headerTitle: 'Songs', ...StackScreenWithSearchBar }}
 			/>
 		</Stack>
 	)
