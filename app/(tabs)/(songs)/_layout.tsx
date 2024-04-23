@@ -9,8 +9,7 @@ const SongsScreenLayout = () => {
 				name='index'
 				options={{
 					headerTitle: 'Songs',
-					...StackScreenWithSearchBar,
-					headerSearchBarOptions: {}
+					...StackScreenWithSearchBar
 				}}
 			/>
 		</Stack>
