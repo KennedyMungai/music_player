@@ -1,15 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import TrackList from '@/components/track-list'
 import { defaultStyles } from '@/styles'
+import React from 'react'
+import { View } from 'react-native'
 
 const SongsPage = () => {
 	return (
 		<View style={defaultStyles.container}>
-			<Text style={defaultStyles.text}>SongsPage</Text>
+			<TrackList />
 		</View>
 	)
 }
 
 export default SongsPage
-
-const styles = StyleSheet.create({})
