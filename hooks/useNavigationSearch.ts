@@ -1,7 +1,7 @@
 import { colors } from '@/constants/tokens'
 import { useNavigation } from 'expo-router'
-import React, { useLayoutEffect, useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { useLayoutEffect, useState } from 'react'
+import { StyleSheet } from 'react-native'
 import { SearchBarProps } from 'react-native-screens'
 
 const defaultSearchOptions: SearchBarProps = {
