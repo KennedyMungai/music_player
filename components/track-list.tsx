@@ -1,9 +1,8 @@
 import { FlatList } from 'react-native'
+import data from '../assets/data/library.json'
 
-type Props = {}
-
-const TrackList = (props: Props) => {
-	return <FlatList data={[]} renderItem={() => null} />
+const TrackList = () => {
+	return <FlatList data={data} renderItem={() => null} />
 }
 
 export default TrackList
