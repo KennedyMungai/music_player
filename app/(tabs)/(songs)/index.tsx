@@ -1,12 +1,14 @@
 import TrackList from '@/components/track-list'
 import { defaultStyles } from '@/styles'
 import React from 'react'
-import { View } from 'react-native'
+import { ScrollView, View } from 'react-native'
 
 const SongsPage = () => {
 	return (
 		<View style={defaultStyles.container}>
-			<TrackList />
+			<ScrollView>
+				<TrackList scrollEnabled={false} />
+			</ScrollView>
 		</View>
 	)
 }
