@@ -4,7 +4,12 @@ import { defaultStyles } from '@/styles'
 
 const PlaylistsPage = () => {
 	return (
-		<View style={defaultStyles.container}>
+		<View
+			style={[
+				defaultStyles.container,
+				{ backgroundColor: '#000', marginTop: 120 }
+			]}
+		>
 			<Text style={defaultStyles.text}>SongsPage</Text>
 		</View>
 	)

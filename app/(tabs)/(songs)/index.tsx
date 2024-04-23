@@ -5,7 +5,12 @@ import { ScrollView, View } from 'react-native'
 
 const SongsPage = () => {
 	return (
-		<View style={defaultStyles.container}>
+		<View
+			style={[
+				defaultStyles.container,
+				{ backgroundColor: '#000', marginTop: 120 }
+			]}
+		>
 			<ScrollView>
 				<TrackList scrollEnabled={false} />
 			</ScrollView>
